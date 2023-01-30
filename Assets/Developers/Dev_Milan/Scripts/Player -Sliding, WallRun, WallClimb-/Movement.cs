@@ -236,64 +236,7 @@ public class Movement : MonoBehaviour
 
     private void AnimationHandler()
     {
-        if (climbing)
-        {
-            anim.SetBool("inAir", false);
-            anim.SetBool("inClimb", true);
-        }
-        else
-            anim.SetBool("inClimb", false);
-
-        if (state == MovementState.air && !climbing)
-            anim.SetBool("inAir", true);
-        else
-            anim.SetBool("inAir", false);
-
-        if (wallRunning.wallLeft)
-        {
-            anim.SetBool("WallRunLeft", true);
-        }
-        else
-            anim.SetBool("WallRunLeft", false);
-
-
-        if (wallRunning.wallRight)
-        {
-            anim.SetBool("WallRunRight", true);
-        }
-        else
-            anim.SetBool("WallRunRight", false);
-
-        switch (state)
-        {
-            case MovementState.walking:
-                if (verticalInput == 0 && horizontalInput == 0)
-                    anim.SetFloat("walkSpeed", 0);
-                else
-                    anim.SetFloat("walkSpeed", 1);
-                break;
-            case MovementState.sprinting:
-                anim.SetFloat("walkSpeed", 3);
-                break;
-            case MovementState.wallrunning:
-                break;
-            case MovementState.climbing:
-                break;
-            case MovementState.crouching:
-                if (verticalInput == 0 && horizontalInput == 0)
-                    anim.SetFloat("walkSpeed", 0);
-                else
-                    anim.SetFloat("walkSpeed", 1);
-                break;
-            case MovementState.sliding:
-                break;
-            case MovementState.air:
-                break;
-            default:
-                anim.SetBool("inAir", false);
-                anim.SetFloat("walkSpeed", 0);
-                break;
-        }
+       
     }
 
     private IEnumerator SmoothlyLerpMoveSpeed()
