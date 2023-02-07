@@ -9,7 +9,6 @@ public class MoveCamera : MonoBehaviour
 
     private void Update()
     {
-        if(!isDead)
-        transform.position = _camerPos.position;
+        if(!isDead) transform.position = _camerPos.position;
     }
 }

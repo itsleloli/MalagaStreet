@@ -8,9 +8,6 @@ public class Movement : MonoBehaviour
     private float moveSpeed;
     public float walkSpeed;
     public float sprintSpeed;
-    public float slideSpeed;
-    public float wallrunSpeed;
-    public float climbSpeed;
 
     private float desiredMoveSpeed;
     private float lastDesiredMoveSpeed;
@@ -38,17 +35,11 @@ public class Movement : MonoBehaviour
     public float playerHeight;
     public LayerMask whatIsGround;
     public bool grounded;
-    public bool isStunned;
 
-    [Header("Slope Handling")]
+    [Header("Slope Handling")]  
     public float maxSlopeAngle;
     private RaycastHit slopeHit;
     private bool exitingSlope;
-
-    [Header("References")]
-    public Climbing climbingScript;
-    [SerializeField] private Animator anim;
-    private WallRunning wallRunning;
 
     public Transform orientation;
 
@@ -65,10 +56,6 @@ public class Movement : MonoBehaviour
     {
         walking,
         sprinting,
-        wallrunning,
-        climbing,
-        crouching,
-        sliding,
         air,
     }
 
@@ -129,7 +116,6 @@ public class Movement : MonoBehaviour
     #endregion
     private void Start()
     {
-        wallRunning = GetComponent<WallRunning>();
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
 
@@ -142,7 +128,6 @@ public class Movement : MonoBehaviour
 
         SpeedControl();
         StateHandler();
-        AnimationHandler();
 
         if (canJump && readyToJump && grounded)
         {
@@ -153,11 +138,6 @@ public class Movement : MonoBehaviour
             Invoke(nameof(ResetJump), jumpCooldown);
         }
 
-        if (isStunned)
-        {
-            rb.drag = 0;
-            Invoke("SetStun", 2);
-        }
         else if (grounded)
             rb.drag = groundDrag;
         else
@@ -169,42 +149,9 @@ public class Movement : MonoBehaviour
         MovePlayer();
     }
 
-    private void SetStun()
-    {
-        isStunned = false;
-    }
-
     private void StateHandler()
     {
-        if (climbing)
-        {
-            state = MovementState.climbing;
-            desiredMoveSpeed = climbSpeed;
-        }
-
-        else if (wallrunning)
-        {
-            state = MovementState.wallrunning;
-            desiredMoveSpeed = wallrunSpeed;
-        }
-
-        if (sliding)
-        {
-            state = MovementState.sliding;
-
-            if (OnSlope() && rb.velocity.y < 0.1f)
-                desiredMoveSpeed = slideSpeed;
-            else
-                desiredMoveSpeed = sprintSpeed;
-        }
-
-        else if (canCrouch)
-        {
-            state = MovementState.crouching;
-            desiredMoveSpeed = crouchSpeed;
-        }
-
-        else if (grounded && canSprint)
+        if (grounded && canSprint)
         {
             state = MovementState.sprinting;
             desiredMoveSpeed = sprintSpeed;
@@ -232,68 +179,6 @@ public class Movement : MonoBehaviour
         }
 
         lastDesiredMoveSpeed = desiredMoveSpeed;
-    }
-
-    private void AnimationHandler()
-    {
-        if (climbing)
-        {
-            anim.SetBool("inAir", false);
-            anim.SetBool("inClimb", true);
-        }
-        else
-            anim.SetBool("inClimb", false);
-
-        if (state == MovementState.air && !climbing)
-            anim.SetBool("inAir", true);
-        else
-            anim.SetBool("inAir", false);
-
-        if (wallRunning.wallLeft)
-        {
-            anim.SetBool("WallRunLeft", true);
-        }
-        else
-            anim.SetBool("WallRunLeft", false);
-
-
-        if (wallRunning.wallRight)
-        {
-            anim.SetBool("WallRunRight", true);
-        }
-        else
-            anim.SetBool("WallRunRight", false);
-
-        switch (state)
-        {
-            case MovementState.walking:
-                if (verticalInput == 0 && horizontalInput == 0)
-                    anim.SetFloat("walkSpeed", 0);
-                else
-                    anim.SetFloat("walkSpeed", 1);
-                break;
-            case MovementState.sprinting:
-                anim.SetFloat("walkSpeed", 3);
-                break;
-            case MovementState.wallrunning:
-                break;
-            case MovementState.climbing:
-                break;
-            case MovementState.crouching:
-                if (verticalInput == 0 && horizontalInput == 0)
-                    anim.SetFloat("walkSpeed", 0);
-                else
-                    anim.SetFloat("walkSpeed", 1);
-                break;
-            case MovementState.sliding:
-                break;
-            case MovementState.air:
-                break;
-            default:
-                anim.SetBool("inAir", false);
-                anim.SetFloat("walkSpeed", 0);
-                break;
-        }
     }
 
     private IEnumerator SmoothlyLerpMoveSpeed()
@@ -324,9 +209,6 @@ public class Movement : MonoBehaviour
 
     private void MovePlayer()
     {
-        if (climbingScript.exitingWall)
-            return;
-
         moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
 
         if (OnSlope() && !exitingSlope)
