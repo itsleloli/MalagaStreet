@@ -22,8 +22,6 @@ public class Movement : MonoBehaviour
     public float jumpForce;
     public float jumpCooldown;
     public float airMultiplier;
-    private bool readyToJump = true;
-    private bool canJump;
 
     [Header("Crouching")]
     public float crouchSpeed;
@@ -71,39 +69,6 @@ public class Movement : MonoBehaviour
         verticalInput = moveInput.y;
     }
 
-    private void OnJumpDown()
-    {
-        canJump = true;
-    }
-
-    private void OnJumpUp()
-    {
-        canJump = false;
-    }
-
-    private void OnCrouchDown()
-    {
-        //if (MainMenu.Instance.m_gameStarted)
-        //{
-        //    if (!this.enabled) return;
-
-        //    transform.localScale = new Vector3(transform.localScale.x, crouchYScale, transform.localScale.z);
-        //    rb.AddForce(Vector3.down * 5f, ForceMode.Impulse);
-
-        //    canCrouch = true;
-        //}
-    }
-
-    private void OnCrouchUp()
-    {
-        //if (MainMenu.Instance.m_gameStarted)
-        //{
-        //    transform.localScale = new Vector3(transform.localScale.x, startYScale, transform.localScale.z);
-
-        //    canCrouch = false;
-        //}
-    }
-
     private void OnSprintDown()
     {
         canSprint = true;
@@ -129,16 +94,7 @@ public class Movement : MonoBehaviour
         SpeedControl();
         StateHandler();
 
-        if (canJump && readyToJump && grounded)
-        {
-            readyToJump = false;
-
-            Jump();
-
-            Invoke(nameof(ResetJump), jumpCooldown);
-        }
-
-        else if (grounded)
+        if (grounded)
             rb.drag = groundDrag;
         else
             rb.drag = 0;
@@ -247,22 +203,6 @@ public class Movement : MonoBehaviour
                 rb.velocity = new Vector3(limitedVel.x, rb.velocity.y, limitedVel.z);
             }
         }
-    }
-
-    private void Jump()
-    {
-        exitingSlope = true;
-
-        rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
-
-        rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
-    }
-
-    private void ResetJump()
-    {
-        readyToJump = true;
-
-        exitingSlope = false;
     }
 
     public bool OnSlope()
