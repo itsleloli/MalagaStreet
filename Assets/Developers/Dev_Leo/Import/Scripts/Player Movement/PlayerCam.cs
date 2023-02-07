@@ -13,7 +13,6 @@ public class PlayerCam : MonoBehaviour
     public Transform _orientation;
     public Transform _camHolder;
 
-
     private float _yRotation;
     private float _xRotation;
 
@@ -45,5 +44,5 @@ public class PlayerCam : MonoBehaviour
 
         _camHolder.rotation = Quaternion.Euler(_xRotation, _yRotation, 0);
         _orientation.rotation = Quaternion.Euler(0, _yRotation, 0);
-    }
+    }   
 }
