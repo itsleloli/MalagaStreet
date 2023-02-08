@@ -37,33 +37,6 @@ public partial class @PlayerMovement : IInputActionCollection2, IDisposable
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""Tab"",
-                    ""type"": ""Button"",
-                    ""id"": ""863df52b-ec7a-40c3-8f92-c1474496c968"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""HoldEscape"",
-                    ""type"": ""Button"",
-                    ""id"": ""e5c12e6d-73c4-443e-b763-2ae3feeb15ae"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Escape"",
-                    ""type"": ""Button"",
-                    ""id"": ""b29fc55a-6dff-45ec-95ee-0784f1eb569a"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": ""Press"",
-                    ""initialStateCheck"": false
-                },
-                {
                     ""name"": ""Look"",
                     ""type"": ""PassThrough"",
                     ""id"": ""e1deecb6-bb1a-4286-8d29-2a657fd2f5a9"",
@@ -82,117 +55,9 @@ public partial class @PlayerMovement : IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""JumpDown"",
+                    ""name"": ""Jump"",
                     ""type"": ""Button"",
                     ""id"": ""71c9eef8-60a8-4c93-8a5e-931ab204b4bf"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""JumpUp"",
-                    ""type"": ""Button"",
-                    ""id"": ""03b597a0-7b53-48f2-9567-13a6605d8a33"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""CrouchDown"",
-                    ""type"": ""Button"",
-                    ""id"": ""da3e92a7-c0ad-4a41-a708-309a88961657"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""CrouchUp"",
-                    ""type"": ""Button"",
-                    ""id"": ""e41906ba-8314-4cef-adad-110f7749cefc"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""SlideDown"",
-                    ""type"": ""Button"",
-                    ""id"": ""c061d08c-0e08-4aa3-aecc-2cd70267c1ff"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""SlideUp"",
-                    ""type"": ""Button"",
-                    ""id"": ""7b956997-6cff-4f53-9bcc-c4dad84547c1"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""SprintDown"",
-                    ""type"": ""Button"",
-                    ""id"": ""5e98cb0a-387a-46df-9738-3f9aac794801"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""SprintUp"",
-                    ""type"": ""Button"",
-                    ""id"": ""c415c4d6-9fcf-4d86-8584-08874f666f26"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""SwitchPrevWeapon"",
-                    ""type"": ""Button"",
-                    ""id"": ""12e4a19a-29f8-47fb-a032-40c3c2195d06"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""SwitchNextWeapon"",
-                    ""type"": ""Button"",
-                    ""id"": ""31c37109-1da8-40f6-b3e3-349f1921d5c8"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Reload"",
-                    ""type"": ""Button"",
-                    ""id"": ""a4abec66-caac-44d4-87a8-bc5202c328ee"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""InScope"",
-                    ""type"": ""Button"",
-                    ""id"": ""e993a922-3b58-4600-a283-ae5549ea81a9"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""OutScope"",
-                    ""type"": ""Button"",
-                    ""id"": ""d9916ab0-1223-499e-a8a7-e6bf32ad4291"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -437,428 +302,19 @@ public partial class @PlayerMovement : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/space"",
                     ""interactions"": ""Press"",
                     ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""JumpDown"",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Jump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""5a11ed98-d854-4fba-8f8e-af80dc355f1b"",
-                    ""path"": ""<Gamepad>/buttonSouth"",
-                    ""interactions"": ""Press"",
+                    ""id"": ""9db09aea-1780-47a6-a204-919b267e366a"",
+                    ""path"": ""<Touchscreen>/Press"",
+                    ""interactions"": ""Tap"",
                     ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""JumpDown"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""299ece09-f01c-4b5d-a83f-632204d60467"",
-                    ""path"": ""<Gamepad>/buttonEast"",
-                    ""interactions"": ""Press"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""CrouchDown"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""06a0c83a-0fa6-407e-9967-2fe21934d53d"",
-                    ""path"": ""<Keyboard>/c"",
-                    ""interactions"": ""Press"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""CrouchDown"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""4aebbaa1-8252-4a2e-9216-b80076b4fedc"",
-                    ""path"": ""<Gamepad>/buttonEast"",
-                    ""interactions"": ""Press(behavior=1)"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""CrouchUp"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""90d5b295-7ad7-486c-9aa4-1fbb5b3f97b1"",
-                    ""path"": ""<Keyboard>/c"",
-                    ""interactions"": ""Press(behavior=1)"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""CrouchUp"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""5d540c6a-c38f-44ec-ae5c-a3f0ae388abd"",
-                    ""path"": ""<Gamepad>/buttonEast"",
-                    ""interactions"": ""Hold(duration=0.2,pressPoint=0.3)"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""SlideDown"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""94ebc836-6d0f-4c34-99ea-036012f91cb2"",
-                    ""path"": ""<Keyboard>/ctrl"",
-                    ""interactions"": ""Press"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""SlideDown"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""2c1e76ec-15de-460b-b1ff-2595925f837d"",
-                    ""path"": ""<Keyboard>/leftShift"",
-                    ""interactions"": ""Press"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""SprintDown"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""e3c1997d-b2f2-4f0c-b052-76a738e9892b"",
-                    ""path"": ""<Gamepad>/leftStickPress"",
-                    ""interactions"": ""Press"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""SprintDown"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""5dbfd618-a868-4057-bebd-cc8158611b54"",
-                    ""path"": ""<Gamepad>/buttonEast"",
-                    ""interactions"": ""Press(behavior=1)"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""SlideUp"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""f8c46200-6865-41b7-a961-ea8b58650b2c"",
-                    ""path"": ""<Keyboard>/ctrl"",
-                    ""interactions"": ""Press(behavior=1)"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""SlideUp"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""60d57b32-2a69-43f9-87de-004ebd55e945"",
-                    ""path"": ""<Keyboard>/leftShift"",
-                    ""interactions"": ""Press(behavior=1)"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""SprintUp"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""c311f248-4a7a-4e77-8167-bf1614e19232"",
-                    ""path"": ""<Gamepad>/leftStickPress"",
-                    ""interactions"": ""Press(behavior=1)"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""SprintUp"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""bbbbfc6e-6999-46ab-8e96-ef5ca1b04506"",
-                    ""path"": ""<Keyboard>/space"",
-                    ""interactions"": ""Press(behavior=1)"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""JumpUp"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""2d352c46-79ee-461a-ab83-1a08b5d0614d"",
-                    ""path"": ""<Gamepad>/buttonSouth"",
-                    ""interactions"": ""Press(behavior=1)"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""JumpUp"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""6bb47f48-8190-490f-b75f-f362425060a2"",
-                    ""path"": ""<Keyboard>/1"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""SwitchPrevWeapon"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""0e05dbb0-677f-41f3-9823-d68fcb382c1f"",
-                    ""path"": ""<Gamepad>/leftShoulder"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""SwitchPrevWeapon"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""4e009742-33e3-4393-914d-be4ef6c92539"",
-                    ""path"": ""<Gamepad>/rightShoulder"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""SwitchNextWeapon"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""4d8a0a3e-0a27-41bd-9863-e3fb282a8096"",
-                    ""path"": ""<Keyboard>/2"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""SwitchNextWeapon"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""831ac4ee-6682-4bb2-8d60-08e3714c7fdf"",
-                    ""path"": ""<Keyboard>/escape"",
-                    ""interactions"": ""Press"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Escape"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""bdae418b-ebdd-4a29-a861-92b232402f51"",
-                    ""path"": ""<Gamepad>/start"",
-                    ""interactions"": ""Press"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Escape"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""00afcee3-a143-4b59-a27f-097b87b4c9f3"",
-                    ""path"": ""<Keyboard>/escape"",
-                    ""interactions"": ""Hold(duration=0.2,pressPoint=0.5)"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""HoldEscape"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""a5d75b02-bdff-4392-a148-b27f0cce71cf"",
-                    ""path"": ""<Gamepad>/start"",
-                    ""interactions"": ""Hold(duration=0.2,pressPoint=0.5)"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""HoldEscape"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""f3ad5833-f604-4a68-a390-ea9aa0ba66d0"",
-                    ""path"": ""<Keyboard>/tab"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Tab"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""0460f876-3d63-4909-b695-e95688327b1e"",
-                    ""path"": ""<Gamepad>/start"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Tab"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""d39a7830-7661-40e3-8d5c-4c88b989cfcc"",
-                    ""path"": ""<Keyboard>/r"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Reload"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""75e31774-3fd7-4869-ad45-23b0058c3e3b"",
-                    ""path"": ""<Gamepad>/buttonWest"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Reload"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""c6ea7dbd-faff-4c5e-8d48-22118987f9a5"",
-                    ""path"": ""<Mouse>/rightButton"",
-                    ""interactions"": ""Press"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""InScope"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""2fd3005d-fe5c-4d34-a122-c0f6866fa3a5"",
-                    ""path"": ""<Gamepad>/leftTrigger"",
-                    ""interactions"": ""Press"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""InScope"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""236d6c35-95eb-455e-b107-5547ffb2f5ae"",
-                    ""path"": ""<Mouse>/rightButton"",
-                    ""interactions"": ""Press(behavior=1)"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""OutScope"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""7f2637ec-cfb0-4ac7-b4e0-3b06b4b27ad7"",
-                    ""path"": ""<Gamepad>/leftTrigger"",
-                    ""interactions"": ""Press(behavior=1)"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""OutScope"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                }
-            ]
-        },
-        {
-            ""name"": ""UI"",
-            ""id"": ""4eec9135-d829-4788-8222-b6fa9beba5a4"",
-            ""actions"": [
-                {
-                    ""name"": ""Escape"",
-                    ""type"": ""Button"",
-                    ""id"": ""88f8a217-e0d2-4391-8ec2-ab5d31cee66d"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": ""Press"",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""HoldEscape"",
-                    ""type"": ""Button"",
-                    ""id"": ""c48bbd9f-23f0-479c-9042-72f685f356b9"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Tab"",
-                    ""type"": ""Button"",
-                    ""id"": ""bffaca14-43ff-4eb7-925b-ee4c17878a39"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                }
-            ],
-            ""bindings"": [
-                {
-                    ""name"": """",
-                    ""id"": ""e535000f-cf66-41de-a2e8-adc38ef00d50"",
-                    ""path"": ""<Keyboard>/tab"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Tab"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""97b24bc6-3d7d-4c2c-ba11-89c68108272f"",
-                    ""path"": ""<Keyboard>/escape"",
-                    ""interactions"": ""Hold(duration=0.2,pressPoint=0.5)"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""HoldEscape"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""1f8038fd-4156-4a70-ad6f-fd4127e7a73f"",
-                    ""path"": ""<Keyboard>/escape"",
-                    ""interactions"": ""Press"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Escape"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""42fbefd7-ad6b-4b2f-8123-e30bd12aa77c"",
-                    ""path"": ""<Gamepad>/start"",
-                    ""interactions"": ""Press"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Escape"",
+                    ""groups"": ""Touch"",
+                    ""action"": ""Jump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -931,29 +387,9 @@ public partial class @PlayerMovement : IInputActionCollection2, IDisposable
         // Player
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
-        m_Player_Tab = m_Player.FindAction("Tab", throwIfNotFound: true);
-        m_Player_HoldEscape = m_Player.FindAction("HoldEscape", throwIfNotFound: true);
-        m_Player_Escape = m_Player.FindAction("Escape", throwIfNotFound: true);
         m_Player_Look = m_Player.FindAction("Look", throwIfNotFound: true);
         m_Player_Fire = m_Player.FindAction("Fire", throwIfNotFound: true);
-        m_Player_JumpDown = m_Player.FindAction("JumpDown", throwIfNotFound: true);
-        m_Player_JumpUp = m_Player.FindAction("JumpUp", throwIfNotFound: true);
-        m_Player_CrouchDown = m_Player.FindAction("CrouchDown", throwIfNotFound: true);
-        m_Player_CrouchUp = m_Player.FindAction("CrouchUp", throwIfNotFound: true);
-        m_Player_SlideDown = m_Player.FindAction("SlideDown", throwIfNotFound: true);
-        m_Player_SlideUp = m_Player.FindAction("SlideUp", throwIfNotFound: true);
-        m_Player_SprintDown = m_Player.FindAction("SprintDown", throwIfNotFound: true);
-        m_Player_SprintUp = m_Player.FindAction("SprintUp", throwIfNotFound: true);
-        m_Player_SwitchPrevWeapon = m_Player.FindAction("SwitchPrevWeapon", throwIfNotFound: true);
-        m_Player_SwitchNextWeapon = m_Player.FindAction("SwitchNextWeapon", throwIfNotFound: true);
-        m_Player_Reload = m_Player.FindAction("Reload", throwIfNotFound: true);
-        m_Player_InScope = m_Player.FindAction("InScope", throwIfNotFound: true);
-        m_Player_OutScope = m_Player.FindAction("OutScope", throwIfNotFound: true);
-        // UI
-        m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
-        m_UI_Escape = m_UI.FindAction("Escape", throwIfNotFound: true);
-        m_UI_HoldEscape = m_UI.FindAction("HoldEscape", throwIfNotFound: true);
-        m_UI_Tab = m_UI.FindAction("Tab", throwIfNotFound: true);
+        m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -1014,47 +450,17 @@ public partial class @PlayerMovement : IInputActionCollection2, IDisposable
     private readonly InputActionMap m_Player;
     private IPlayerActions m_PlayerActionsCallbackInterface;
     private readonly InputAction m_Player_Move;
-    private readonly InputAction m_Player_Tab;
-    private readonly InputAction m_Player_HoldEscape;
-    private readonly InputAction m_Player_Escape;
     private readonly InputAction m_Player_Look;
     private readonly InputAction m_Player_Fire;
-    private readonly InputAction m_Player_JumpDown;
-    private readonly InputAction m_Player_JumpUp;
-    private readonly InputAction m_Player_CrouchDown;
-    private readonly InputAction m_Player_CrouchUp;
-    private readonly InputAction m_Player_SlideDown;
-    private readonly InputAction m_Player_SlideUp;
-    private readonly InputAction m_Player_SprintDown;
-    private readonly InputAction m_Player_SprintUp;
-    private readonly InputAction m_Player_SwitchPrevWeapon;
-    private readonly InputAction m_Player_SwitchNextWeapon;
-    private readonly InputAction m_Player_Reload;
-    private readonly InputAction m_Player_InScope;
-    private readonly InputAction m_Player_OutScope;
+    private readonly InputAction m_Player_Jump;
     public struct PlayerActions
     {
         private @PlayerMovement m_Wrapper;
         public PlayerActions(@PlayerMovement wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_Player_Move;
-        public InputAction @Tab => m_Wrapper.m_Player_Tab;
-        public InputAction @HoldEscape => m_Wrapper.m_Player_HoldEscape;
-        public InputAction @Escape => m_Wrapper.m_Player_Escape;
         public InputAction @Look => m_Wrapper.m_Player_Look;
         public InputAction @Fire => m_Wrapper.m_Player_Fire;
-        public InputAction @JumpDown => m_Wrapper.m_Player_JumpDown;
-        public InputAction @JumpUp => m_Wrapper.m_Player_JumpUp;
-        public InputAction @CrouchDown => m_Wrapper.m_Player_CrouchDown;
-        public InputAction @CrouchUp => m_Wrapper.m_Player_CrouchUp;
-        public InputAction @SlideDown => m_Wrapper.m_Player_SlideDown;
-        public InputAction @SlideUp => m_Wrapper.m_Player_SlideUp;
-        public InputAction @SprintDown => m_Wrapper.m_Player_SprintDown;
-        public InputAction @SprintUp => m_Wrapper.m_Player_SprintUp;
-        public InputAction @SwitchPrevWeapon => m_Wrapper.m_Player_SwitchPrevWeapon;
-        public InputAction @SwitchNextWeapon => m_Wrapper.m_Player_SwitchNextWeapon;
-        public InputAction @Reload => m_Wrapper.m_Player_Reload;
-        public InputAction @InScope => m_Wrapper.m_Player_InScope;
-        public InputAction @OutScope => m_Wrapper.m_Player_OutScope;
+        public InputAction @Jump => m_Wrapper.m_Player_Jump;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1067,60 +473,15 @@ public partial class @PlayerMovement : IInputActionCollection2, IDisposable
                 @Move.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMove;
                 @Move.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMove;
                 @Move.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMove;
-                @Tab.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnTab;
-                @Tab.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnTab;
-                @Tab.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnTab;
-                @HoldEscape.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnHoldEscape;
-                @HoldEscape.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnHoldEscape;
-                @HoldEscape.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnHoldEscape;
-                @Escape.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnEscape;
-                @Escape.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnEscape;
-                @Escape.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnEscape;
                 @Look.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLook;
                 @Look.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLook;
                 @Look.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLook;
                 @Fire.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnFire;
                 @Fire.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnFire;
                 @Fire.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnFire;
-                @JumpDown.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJumpDown;
-                @JumpDown.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJumpDown;
-                @JumpDown.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJumpDown;
-                @JumpUp.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJumpUp;
-                @JumpUp.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJumpUp;
-                @JumpUp.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJumpUp;
-                @CrouchDown.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCrouchDown;
-                @CrouchDown.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCrouchDown;
-                @CrouchDown.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCrouchDown;
-                @CrouchUp.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCrouchUp;
-                @CrouchUp.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCrouchUp;
-                @CrouchUp.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCrouchUp;
-                @SlideDown.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSlideDown;
-                @SlideDown.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSlideDown;
-                @SlideDown.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSlideDown;
-                @SlideUp.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSlideUp;
-                @SlideUp.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSlideUp;
-                @SlideUp.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSlideUp;
-                @SprintDown.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSprintDown;
-                @SprintDown.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSprintDown;
-                @SprintDown.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSprintDown;
-                @SprintUp.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSprintUp;
-                @SprintUp.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSprintUp;
-                @SprintUp.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSprintUp;
-                @SwitchPrevWeapon.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSwitchPrevWeapon;
-                @SwitchPrevWeapon.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSwitchPrevWeapon;
-                @SwitchPrevWeapon.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSwitchPrevWeapon;
-                @SwitchNextWeapon.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSwitchNextWeapon;
-                @SwitchNextWeapon.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSwitchNextWeapon;
-                @SwitchNextWeapon.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSwitchNextWeapon;
-                @Reload.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnReload;
-                @Reload.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnReload;
-                @Reload.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnReload;
-                @InScope.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInScope;
-                @InScope.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInScope;
-                @InScope.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInScope;
-                @OutScope.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnOutScope;
-                @OutScope.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnOutScope;
-                @OutScope.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnOutScope;
+                @Jump.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
+                @Jump.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
+                @Jump.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -1128,113 +489,19 @@ public partial class @PlayerMovement : IInputActionCollection2, IDisposable
                 @Move.started += instance.OnMove;
                 @Move.performed += instance.OnMove;
                 @Move.canceled += instance.OnMove;
-                @Tab.started += instance.OnTab;
-                @Tab.performed += instance.OnTab;
-                @Tab.canceled += instance.OnTab;
-                @HoldEscape.started += instance.OnHoldEscape;
-                @HoldEscape.performed += instance.OnHoldEscape;
-                @HoldEscape.canceled += instance.OnHoldEscape;
-                @Escape.started += instance.OnEscape;
-                @Escape.performed += instance.OnEscape;
-                @Escape.canceled += instance.OnEscape;
                 @Look.started += instance.OnLook;
                 @Look.performed += instance.OnLook;
                 @Look.canceled += instance.OnLook;
                 @Fire.started += instance.OnFire;
                 @Fire.performed += instance.OnFire;
                 @Fire.canceled += instance.OnFire;
-                @JumpDown.started += instance.OnJumpDown;
-                @JumpDown.performed += instance.OnJumpDown;
-                @JumpDown.canceled += instance.OnJumpDown;
-                @JumpUp.started += instance.OnJumpUp;
-                @JumpUp.performed += instance.OnJumpUp;
-                @JumpUp.canceled += instance.OnJumpUp;
-                @CrouchDown.started += instance.OnCrouchDown;
-                @CrouchDown.performed += instance.OnCrouchDown;
-                @CrouchDown.canceled += instance.OnCrouchDown;
-                @CrouchUp.started += instance.OnCrouchUp;
-                @CrouchUp.performed += instance.OnCrouchUp;
-                @CrouchUp.canceled += instance.OnCrouchUp;
-                @SlideDown.started += instance.OnSlideDown;
-                @SlideDown.performed += instance.OnSlideDown;
-                @SlideDown.canceled += instance.OnSlideDown;
-                @SlideUp.started += instance.OnSlideUp;
-                @SlideUp.performed += instance.OnSlideUp;
-                @SlideUp.canceled += instance.OnSlideUp;
-                @SprintDown.started += instance.OnSprintDown;
-                @SprintDown.performed += instance.OnSprintDown;
-                @SprintDown.canceled += instance.OnSprintDown;
-                @SprintUp.started += instance.OnSprintUp;
-                @SprintUp.performed += instance.OnSprintUp;
-                @SprintUp.canceled += instance.OnSprintUp;
-                @SwitchPrevWeapon.started += instance.OnSwitchPrevWeapon;
-                @SwitchPrevWeapon.performed += instance.OnSwitchPrevWeapon;
-                @SwitchPrevWeapon.canceled += instance.OnSwitchPrevWeapon;
-                @SwitchNextWeapon.started += instance.OnSwitchNextWeapon;
-                @SwitchNextWeapon.performed += instance.OnSwitchNextWeapon;
-                @SwitchNextWeapon.canceled += instance.OnSwitchNextWeapon;
-                @Reload.started += instance.OnReload;
-                @Reload.performed += instance.OnReload;
-                @Reload.canceled += instance.OnReload;
-                @InScope.started += instance.OnInScope;
-                @InScope.performed += instance.OnInScope;
-                @InScope.canceled += instance.OnInScope;
-                @OutScope.started += instance.OnOutScope;
-                @OutScope.performed += instance.OnOutScope;
-                @OutScope.canceled += instance.OnOutScope;
+                @Jump.started += instance.OnJump;
+                @Jump.performed += instance.OnJump;
+                @Jump.canceled += instance.OnJump;
             }
         }
     }
     public PlayerActions @Player => new PlayerActions(this);
-
-    // UI
-    private readonly InputActionMap m_UI;
-    private IUIActions m_UIActionsCallbackInterface;
-    private readonly InputAction m_UI_Escape;
-    private readonly InputAction m_UI_HoldEscape;
-    private readonly InputAction m_UI_Tab;
-    public struct UIActions
-    {
-        private @PlayerMovement m_Wrapper;
-        public UIActions(@PlayerMovement wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Escape => m_Wrapper.m_UI_Escape;
-        public InputAction @HoldEscape => m_Wrapper.m_UI_HoldEscape;
-        public InputAction @Tab => m_Wrapper.m_UI_Tab;
-        public InputActionMap Get() { return m_Wrapper.m_UI; }
-        public void Enable() { Get().Enable(); }
-        public void Disable() { Get().Disable(); }
-        public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(UIActions set) { return set.Get(); }
-        public void SetCallbacks(IUIActions instance)
-        {
-            if (m_Wrapper.m_UIActionsCallbackInterface != null)
-            {
-                @Escape.started -= m_Wrapper.m_UIActionsCallbackInterface.OnEscape;
-                @Escape.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnEscape;
-                @Escape.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnEscape;
-                @HoldEscape.started -= m_Wrapper.m_UIActionsCallbackInterface.OnHoldEscape;
-                @HoldEscape.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnHoldEscape;
-                @HoldEscape.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnHoldEscape;
-                @Tab.started -= m_Wrapper.m_UIActionsCallbackInterface.OnTab;
-                @Tab.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnTab;
-                @Tab.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnTab;
-            }
-            m_Wrapper.m_UIActionsCallbackInterface = instance;
-            if (instance != null)
-            {
-                @Escape.started += instance.OnEscape;
-                @Escape.performed += instance.OnEscape;
-                @Escape.canceled += instance.OnEscape;
-                @HoldEscape.started += instance.OnHoldEscape;
-                @HoldEscape.performed += instance.OnHoldEscape;
-                @HoldEscape.canceled += instance.OnHoldEscape;
-                @Tab.started += instance.OnTab;
-                @Tab.performed += instance.OnTab;
-                @Tab.canceled += instance.OnTab;
-            }
-        }
-    }
-    public UIActions @UI => new UIActions(this);
     private int m_KeyboardMouseSchemeIndex = -1;
     public InputControlScheme KeyboardMouseScheme
     {
@@ -1283,29 +550,8 @@ public partial class @PlayerMovement : IInputActionCollection2, IDisposable
     public interface IPlayerActions
     {
         void OnMove(InputAction.CallbackContext context);
-        void OnTab(InputAction.CallbackContext context);
-        void OnHoldEscape(InputAction.CallbackContext context);
-        void OnEscape(InputAction.CallbackContext context);
         void OnLook(InputAction.CallbackContext context);
         void OnFire(InputAction.CallbackContext context);
-        void OnJumpDown(InputAction.CallbackContext context);
-        void OnJumpUp(InputAction.CallbackContext context);
-        void OnCrouchDown(InputAction.CallbackContext context);
-        void OnCrouchUp(InputAction.CallbackContext context);
-        void OnSlideDown(InputAction.CallbackContext context);
-        void OnSlideUp(InputAction.CallbackContext context);
-        void OnSprintDown(InputAction.CallbackContext context);
-        void OnSprintUp(InputAction.CallbackContext context);
-        void OnSwitchPrevWeapon(InputAction.CallbackContext context);
-        void OnSwitchNextWeapon(InputAction.CallbackContext context);
-        void OnReload(InputAction.CallbackContext context);
-        void OnInScope(InputAction.CallbackContext context);
-        void OnOutScope(InputAction.CallbackContext context);
-    }
-    public interface IUIActions
-    {
-        void OnEscape(InputAction.CallbackContext context);
-        void OnHoldEscape(InputAction.CallbackContext context);
-        void OnTab(InputAction.CallbackContext context);
+        void OnJump(InputAction.CallbackContext context);
     }
 }
